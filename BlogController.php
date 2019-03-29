@@ -4,7 +4,7 @@ class BlogController extends AbstractController
     public function blog()
     {
         $model = $this->getModel(Model::class);
-        $admin = $model->getArticles();
+        $admin = $model->getArticles();   
         $this->render('view/blog.php', compact('admin'));
     }
 
